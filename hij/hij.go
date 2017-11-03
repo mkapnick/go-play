@@ -1,4 +1,4 @@
-ackage hij
+package hij
 
 import "fmt"
 
@@ -12,4 +12,7 @@ func Hello() {
 	fmt.Println(<-hello)
 	fmt.Println(<-hello)
 	fmt.Println(<-hello)
+
+	// close the channel
+	close(hello)
 }
